@@ -5,9 +5,11 @@ import { PiMonitorPlayFill } from "react-icons/pi";
 import { MdGroups } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
 import avatar from "../../../../icon/avatar.jpg";
+import { BsGrid3X3GapFill } from "react-icons/bs";
+
 function Headers(props) {
   return (
-    <header className="w-full h-14 bg-[#262728] border-b-[1px] border-solid border-[#757575]/20 flex justify-between items-center px-4 gap-5">
+    <header className="w-full h-12 bg-[#262728] border-b-[1px] border-solid border-[#757575]/20 flex justify-between items-center px-4 fixed">
       {/* logo */}
       <div className="flex items-center justify-center gap-2">
         <div className="w-10 h-10 flex justify-between items-center">
@@ -24,18 +26,18 @@ function Headers(props) {
       </div>
       {/* end logo */}
       {/* start menu list */}
-      <div className="h-full bg-transparent flex justify-between list-none items-center text-[28px] text-[#B0B3B8]/50">
+      <div className="h-full bg-transparent flex justify-between list-none items-center text-[26px] text-[#B0B3B8]/50">
         <li className="px-12 h-4/5 flex items-center hover:bg-[#fff]/10 hover:rounded-xl my-1 relative">
           <GoHomeFill className="text-[#0866FF]" />
           <div className="absolute right-0 bottom-0 w-full h-1 after:content-[''] after:absolute after:right-0 after:bottom-[-5px] after:w-full after:h-1 after:bg-[#0866FF]"></div>
         </li>
-        <li className="px-12 h-full flex items-center ">
+        <li className="px-12 h-4/5 flex items-center  hover:bg-[#fff]/10 hover:rounded-xl ">
           <FaUser />
         </li>
-        <li className="px-12 h-full flex items-center">
+        <li className="px-12 h-4/5 flex items-center  hover:bg-[#fff]/10 hover:rounded-xl ">
           <PiMonitorPlayFill />
         </li>
-        <li className="px-12 h-full flex items-center">
+        <li className="px-12 h-4/5 flex items-center  hover:bg-[#fff]/10 hover:rounded-xl">
           <MdGroups />
         </li>
       </div>
@@ -43,7 +45,12 @@ function Headers(props) {
       {/* start user info */}
       <div className="px-4 h-full list-none flex items-center justify-center gap-2 bg-sl  ate-500 text-[20px] text-[#fff] ">
         <li className="w-10 h-10 bg-[#3A3B3C] rounded-full flex items-center justify-center relative hover:bg-[#fff]/20">
-          <FaFacebookMessenger />
+        <BsGrid3X3GapFill />
+
+          
+        </li>
+        <li className="w-10 h-10 bg-[#3A3B3C] rounded-full flex items-center justify-center relative hover:bg-[#fff]/20">
+          <FaFacebookMessenger  />
           <div className="absolute top-[-8px] right-[-10px] bg-[red] rounded-full text-[10px] p-1 font-bold">
             99+
           </div>
