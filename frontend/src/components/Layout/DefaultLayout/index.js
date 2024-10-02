@@ -8,12 +8,10 @@ function DefaultLayout({ children }) {
     <div>
       <Headers />
       {/* <div className="w-full h-12"></div> */}
-      <div className="w-full m-0 p-0">
-        <div className="w-full h-full flex gap-5">
+      <div className="w-full">
+        <div className="w-full flex gap-5">
         <SideBar />
-          {/* <div className="w-80 top-14 left-0 h-screen sticky max-lg:hidden bg-transparent -z-10 pointer-events-none"></div> */}
-          <div className="w-full ">{children}</div>
-          {/* <div className="w-80 top-14 right-0 h-screen sticky  bg-transparent -z-10 pointer-events-none"></div> */}
+          <div className="w-full h-full">{children}</div>
         <MessageBar />
         </div>
       </div>

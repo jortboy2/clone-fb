@@ -1,9 +1,9 @@
 import React from "react";
 
-function MessageBar(props) {
+function MessageBar() {
   return (
-    <div className="w-80 h-screen bg-red-400 text-[#fff] p-3 !sticky right-0 z-10">
-      dsasssssssssssssssss
+    <div className="w-80 max-h-96 bg-red-500 sticky top-[10px] left-0 z-10">
+      asd
     </div>
   );
 }
