@@ -9,7 +9,7 @@ import { BsGrid3X3GapFill } from "react-icons/bs";
 
 function Headers(props) {
   return (
-    <header className="w-full h-12 bg-[#262728] border-b-[1px] border-solid border-[#757575]/20 flex justify-between items-center px-4 fixed">
+    <header className="w-full h-12 bg-[#262728] border-b-[1px] border-solid border-[#757575]/20 flex justify-between items-center z-20 px-4 sticky top-0">
       {/* logo */}
       <div className="flex items-center justify-center gap-2">
         <div className="w-10 h-10 flex justify-between items-center">
@@ -19,9 +19,9 @@ function Headers(props) {
             alt="facebook"
           />
         </div>
-        <div className="w-56 h-10 bg-[#3A3B3C] rounded-full flex items-center gap-1 px-2 text-[#fff]/60 text-[20px]">
+        <div className="lg:w-56 w-10 h-10 bg-[#3A3B3C] rounded-full flex items-center justify-center gap-1 px-2 text-[#fff]/60 text-[20px]">
           <GoSearch />
-          <input type="text" placeholder="Tìm kiếm trên Facebook"  className="w-full h-full text-[14px] bg-transparent outline-none px-2 rounded-full"/>
+          <input type="text" placeholder="Tìm kiếm trên Facebook"  className="w-full h-full text-[14px] bg-transparent outline-none px-2 rounded-full max-lg:hidden"/>
         </div>
       </div>
       {/* end logo */}
